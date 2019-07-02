@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kiosk</string>
+    <string name="sub_heading">Gaming news from The Guardian</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">Bleep bloop.\nNo connection found.</string>
+
+    <!-- Text to display when there's no news :( -->
+    <string name="no_news">Beep beep. \nNo articles found.</string>
+</resources>
