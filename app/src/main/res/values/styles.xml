@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -8,14 +8,56 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Custom theme for the Kiosk app. -->
-    <style name="KioskTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="android:windowNoTitle">true</item>
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="background">@color/background</item>
+
+    <!-- Style for the Kiosk title -->
+    <style name="TitleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:fontFamily">@font/overpass_mono_bold</item>
+        <item name="android:textColor">@color/primary_font</item>
+        <item name="android:textSize">60sp</item>
+    </style>
+
+    <!-- Style for the Kiosk sub header -->
+    <style name="SubHeaderTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textColor">@color/tertiary_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Styling for the headlines -->
+    <style name="HeadlineTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/background</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/secondary_font</item>
+    </style>
+
+    <!-- Styling for the category -->
+    <style name="CategoryTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.2</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/tertiary_font</item>
+        <item name="android:background">@color/background</item>
+
+    </style>
+
+    <!-- Styling for the authors and dates -->
+    <style name="AuthorTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textColor">@color/tertiary_font</item>
+
     </style>
 
 

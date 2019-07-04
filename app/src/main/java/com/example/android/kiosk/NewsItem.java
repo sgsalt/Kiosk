@@ -6,29 +6,40 @@ package com.example.android.kiosk;
 
 public class NewsItem {
 
-    /** Headline of the article */
+    /**
+     * Headline of the article
+     */
     private String mHeadline;
 
-    /** Byline (writer) of the article */
+    /**
+     * Byline (writer) of the article
+     */
     private String mByline;
 
-    /** Category of the article */
+    /**
+     * Category of the article
+     */
     private String mCategory;
 
-    /** Timestamp for the article */
+    /**
+     * Timestamp for the article
+     */
     private String mDate;
 
-    /** URL of the article */
+    /**
+     * URL of the article
+     */
     private String mUrl;
 
-    /** This is the constructor for each new {@link com.example.android.kiosk.NewsItem} object.
+    /**
+     * This is the constructor for each new {@link com.example.android.kiosk.NewsItem} object.
      *
      * @param headline is the headline of the article.
-     * @param byline is the writer of the article.
+     * @param byline   is the writer of the article.
      * @param category is the category of the article.
-     * @param date is the timestamp for the article.
-     * @param url is the full webpage for that article.
-      */
+     * @param date     is the timestamp for the article.
+     * @param url      is the full webpage for that article.
+     */
     public NewsItem(String headline, String byline, String category, String date, String url) {
         mHeadline = headline;
         mByline = byline;

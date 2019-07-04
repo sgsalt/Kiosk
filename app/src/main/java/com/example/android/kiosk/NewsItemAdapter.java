@@ -11,7 +11,7 @@ import java.util.List;
 
 /**
  * This is an adapter that knows how to create a list item layout for each article in the data source.
- *
+ * <p>
  * These list item layouts will be provided to an adapter view (ListView) to be displayed on the screen.
  */
 
@@ -20,7 +20,7 @@ public class NewsItemAdapter extends ArrayAdapter<NewsItem> {
     /**
      * Constructs a new NewsItem adapter
      *
-     * @param context of the app
+     * @param context   of the app
      * @param newsItems is the list of articles (the data source)
      */
     public NewsItemAdapter(Context context, List<NewsItem> newsItems) {
@@ -68,7 +68,7 @@ public class NewsItemAdapter extends ArrayAdapter<NewsItem> {
         // Find the TextView with the ID: date
         TextView dateView = listItemView.findViewById(R.id.date);
         // Get the date from the NewsItem object
-        String dateText = currentNewsItem.getDate();
+        String dateText = currentNewsItem.getDate().substring(0, 10);
         // Display the date of the article in that TextView
         dateView.setText(dateText);
         //TODO: Format the date if needed.
@@ -76,4 +76,6 @@ public class NewsItemAdapter extends ArrayAdapter<NewsItem> {
         // Return the ListView which now should be showing the appropriate data
         return listItemView;
     }
+
+
 }

@@ -31,17 +31,25 @@ public class MainActivity extends AppCompatActivity
 
     public static final String LOG_TAG = MainActivity.class.getName();
 
-    /**Create a static object for the Guardian JSON url */
+    /**
+     * Create a static object for the Guardian JSON url
+     */
     private static final String REQUEST_URL = "https://content.guardianapis.com/search?section=games&order-by=newest&show-fields=byline&q=games&api-key=1c2934de-0ee0-446d-9daa-6caf11fdf91e";
 
-    /** Static value for the news item loader ID, in case we add more in the future */
+    /**
+     * Static value for the news item loader ID, in case we add more in the future
+     */
 
     private static final int NEWS_ITEM_LOADER_ID = 1;
 
-    /** The adapter for the news item list */
+    /**
+     * The adapter for the news item list
+     */
     private NewsItemAdapter mAdapter;
 
-    /** Placeholder text in case the data doesn't load, leaving an empty TextView */
+    /**
+     * Placeholder text in case the data doesn't load, leaving an empty TextView
+     */
     private TextView mEmptyTextView;
 
     @Override
@@ -89,7 +97,7 @@ public class MainActivity extends AppCompatActivity
         NetworkInfo networkInfo = connMgr.getActiveNetworkInfo();
 
         // If there is a network connection, fetch data.
-        if (networkInfo !=null && networkInfo.isConnected()) {
+        if (networkInfo != null && networkInfo.isConnected()) {
             //Get a reference to the loader manager to , in order to interact with loaders.
             LoaderManager loaderManager = getLoaderManager();
 
@@ -124,7 +132,7 @@ public class MainActivity extends AppCompatActivity
         uriBuilder.appendQueryParameter("limit", "10");
 
         //Return the completed uri
-        return new NewsItemLoader (this,uriBuilder.toString());
+        return new NewsItemLoader(this, uriBuilder.toString());
     }
 
     @Override

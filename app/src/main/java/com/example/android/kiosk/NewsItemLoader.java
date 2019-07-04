@@ -11,19 +11,23 @@ import java.util.List;
 
 public class NewsItemLoader extends AsyncTaskLoader<List<NewsItem>> {
 
-    /** Tag for log messages */
+    /**
+     * Tag for log messages
+     */
     private static final String LOG_TAG = NewsItemLoader.class.getName();
 
-    /** Query URL */
+    /**
+     * Query URL
+     */
     private String mUrl;
 
     /**
      * Constructs a new NewsItemLoader.
      *
      * @param context of the activity.
-     * @param url to request the data from
+     * @param url     to request the data from
      */
-    public NewsItemLoader (Context context, String url) {
+    public NewsItemLoader(Context context, String url) {
         super(context);
         mUrl = url;
     }
@@ -34,7 +38,7 @@ public class NewsItemLoader extends AsyncTaskLoader<List<NewsItem>> {
     }
 
     /**
-     *  On the background thread.
+     * On the background thread.
      */
     @Override
     public List<NewsItem> loadInBackground() {
